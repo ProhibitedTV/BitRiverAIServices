@@ -243,4 +243,8 @@ with gr.Blocks(css=css, theme=CustomDarkTheme()) as demo:
     chat_interface_component.fn = chat_interface_wrapper
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7865)
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=7865,
+        root_path="/gradio-chat"  # This makes it work behind the Nginx proxy
+    )
