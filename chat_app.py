@@ -243,4 +243,4 @@ with gr.Blocks(css=css, theme=CustomDarkTheme()) as demo:
     chat_interface_component.fn = chat_interface_wrapper
 
 if __name__ == "__main__":
-    demo.launch(server_port=7861)
+    demo.launch(server_port=7865)
