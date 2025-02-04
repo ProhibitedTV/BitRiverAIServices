@@ -272,4 +272,4 @@ with gr.Blocks(css=css, theme=CustomDarkTheme()) as demo:
     poetry_interface_component.fn = poetry_interface_wrapper
 
 if __name__ == "__main__":
-    demo.launch(server_port=7866)
+    demo.launch(server_name="0.0.0.0", server_port=7866)
